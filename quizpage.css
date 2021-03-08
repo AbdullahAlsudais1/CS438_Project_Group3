@@ -41,3 +41,13 @@ h2 {
     justify-content: center;
     align-items: center;
 }
+#progress-bar-full {
+    height: 3.4rem; width: 0%;
+    background-color: rgb(48, 53, 59);
+  }
+#progress-bar {
+    width: 30rem; height: 4rem;
+    border: 0.3rem solid rgba(86, 185, 235, 0.5);
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }

@@ -1,8 +1,9 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 
-const question_counter_text = document.getElementById("question_counter");
+const progress_text = document.getElementById("progress-text");
 const score_text = document.getElementById("score");
+const progress_bar_full = document.getElementById("progress-bar-full");
 
 let current_question = {};
 let accepting_answers = false;
@@ -64,17 +65,18 @@ get_new_question = () => {
     }
 
     question_counter++;
-    question_counter_text.innerText=question_counter+ "/" +MAX_QUESTIONS;// display question counter
-    const question_index = Math.floor(Math.random() * available_questions.length);// random question
+    progress_text.innerText = `question ${question_counter}/${MAX_QUESTIONS}`; // display question counter
+    progress_bar_full.style.width = `${(question_counter / MAX_QUESTIONS) * 100}%`; //increment of progress bar
+    const question_index = Math.floor(Math.random() * available_questions.length); // random question
     current_question = available_questions[question_index];
     question.innerText = current_question.question;
 
     choices.forEach((choice) => {
         const number = choice.dataset['number'];
-        choice.innerText = current_question['choice' + number];// get choices for specific question
+        choice.innerText = current_question['choice' + number]; // get choices for specific question
     });
 
-    available_questions.splice(question_index, 1);// to prevent duplicate questions
+    available_questions.splice(question_index, 1); // to prevent duplicate questions
     accepting_answers = true;
 };
 
@@ -88,7 +90,7 @@ choices.forEach((choice) => //once you click on the choice the next will show up
         const selected_answer = selected_choice.dataset['number'];
         const class_to_apply = selected_answer == current_question.answer ? "correct" : "incorrect";
         //if the answer is correct or not
-        if(class_to_apply =="correct"){
+        if (class_to_apply == "correct") {
             increment_score(10)
         }
         selected_choice.parentElement.classList.add(class_to_apply);
@@ -102,6 +104,6 @@ choices.forEach((choice) => //once you click on the choice the next will show up
 increment_score = num => {
     score += num;
     score_text.innerText = score;
-  };
+};
 //main
 start_game();
