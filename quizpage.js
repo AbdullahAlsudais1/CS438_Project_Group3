@@ -84,7 +84,7 @@ choices.forEach((choice) => //once you click on the choice the next will show up
         const class_to_apply = selected_answer == current_question.answer ? "correct" : "incorrect";
         selected_choice.parentElement.classList.add(class_to_apply);
 
-        set_timeout(() => {
+        setTimeout(() => {
             selected_choice.parentElement.classList.remove(class_to_apply);
             get_new_question();
         }, 1000);
