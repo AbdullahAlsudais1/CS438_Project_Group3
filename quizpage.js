@@ -1,6 +1,9 @@
 const question = document.getElementById("question");
 const choices = Array.from(document.getElementsByClassName("choice-text"));
 
+const question_counter_text = document.getElementById("question_counter");
+const score_text = document.getElementById("score");
+
 let current_question = {};
 let accepting_answers = false;
 let score = 0;
@@ -59,7 +62,9 @@ get_new_question = () => {
         //there is no questions or all question have been fetched
         return window.location.assign('/end.html');
     }
+
     question_counter++;
+    question_counter_text.innerText=question_counter+ "/" +MAX_QUESTIONS;// display question counter
     const question_index = Math.floor(Math.random() * available_questions.length);// random question
     current_question = available_questions[question_index];
     question.innerText = current_question.question;
@@ -82,6 +87,10 @@ choices.forEach((choice) => //once you click on the choice the next will show up
         const selected_choice = e.target;
         const selected_answer = selected_choice.dataset['number'];
         const class_to_apply = selected_answer == current_question.answer ? "correct" : "incorrect";
+        //if the answer is correct or not
+        if(class_to_apply =="correct"){
+            increment_score(10)
+        }
         selected_choice.parentElement.classList.add(class_to_apply);
 
         setTimeout(() => {
@@ -90,5 +99,9 @@ choices.forEach((choice) => //once you click on the choice the next will show up
         }, 1000);
     });
 });
+increment_score = num => {
+    score += num;
+    score_text.innerText = score;
+  };
 //main
 start_game();
