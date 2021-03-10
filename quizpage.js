@@ -22,7 +22,7 @@ fetch("questions.json").then(res => {
 .then(loadedQuestions => {
     console.log(loadedQuestions);
     questions = loadedQuestions;
-    start_game();
+    start_game(); // moved it from the bottom to here since the questions need to be loaded
 })
 .catch(err => { // It will show the errors occured in the console, no need for that really just for best practice
     console.error(err);
@@ -89,4 +89,3 @@ increment_score = num => {
     score += num;
     score_text.innerText = score;
 };
-//main
