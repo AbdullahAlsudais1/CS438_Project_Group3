@@ -1,3 +1,4 @@
+/*Still on progress*/
 :root {
     background-color: #929ba7;
     font-size: 62.5%;
@@ -46,7 +47,7 @@ h3 {
     font-weight: 500;
 }
 
-.main-adjustments {
+.container {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -56,16 +57,16 @@ h3 {
     margin: 0 auto;
 }
 
-.main-adjustments > * {
+.container > * {
     width: 100%;
 }
 
-.adjust-column {
+.flex-column {
     display: flex;
     flex-direction: column;
 }
 
-.adjust-center {
+.flex-center {
     justify-content: center;
     align-items: center;
 }
@@ -82,7 +83,7 @@ h3 {
     display: none;
 }
 
-.btn {
+.button {
     font-size: 1.8rem;
     padding: 1rem 0;
     width: 20rem;
@@ -95,15 +96,36 @@ h3 {
     border-radius: 1rem;
 }
 
-.btn:hover {
+.button:hover {
     cursor: pointer;
     box-shadow: 0 0.4rem 1.4rem rgba(86, 185, 235, 0.5);
     transform: translate(0.1rem);
     transition: transform 150ms;
 }
 
-.btn[disabled]:hover {
+.button[disabled]:hover {
     cursor: not-allowed;
     box-shadow: none;
     transform: none;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.4rem 1.4rem rgba(86, 185, 235, 0.5);
+    color: #56a5eb;
+}
+
+input::placeholder {
+    color: #56a5eb;
 }

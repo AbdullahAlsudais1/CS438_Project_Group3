@@ -1,0 +1,15 @@
+/*Still on progress*/
+#highScoresList {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+}
+/* this class is for displaying the "name-score" in the highscores page*/
+.high-score {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+/*I think we can delete the hover later or change it into something more creative*/
+.high-score:hover {
+    transform: scale(1.025);
+}

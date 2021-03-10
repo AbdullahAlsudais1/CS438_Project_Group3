@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congrats!</title>
+    <link rel="stylesheet" href="homepage.css">
+  </head>
+  <body>
+    <!-- We are having the same container class for our end page
+    The input is for saving and it will be disabled until the username box is !null -->
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore"></h1>
+            <form>
+                <input 
+                  type="text" 
+                  name="username" 
+                  id="username" 
+                  placeholder="username"
+                />
+                <button 
+                  type="submit" 
+                  class="button" 
+                  id="saveScoreButton" 
+                  onclick="saveHighScore(event)"
+                  disabled
+                >
+                  Save
+                </button>
+            </form>
+            <a class="button" href="/quizpage.html">Play Again</a>
+            <a class="button" href="">Go Home</a>
+        </div>
+    </div>
+    <script src="end.js"></script>   
+  </body>
+</html>

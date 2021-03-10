@@ -1,0 +1,35 @@
+
+[
+    {
+        "question": "HTML stands for?",
+        "choice1": "HyperText Markup Language",
+        "choice2": "HighText Machine Language",
+        "choice3": "HyperText and links Markup Language",
+        "choice4": "None of the above",
+        "answer": 1
+    },
+    {
+        "question": "The correct sequence of HTML tags for starting a webpage is?",
+        "choice1": "HTML, Body, Title, Head",
+        "choice2": "Head, Title, HTML, body",
+        "choice3": "HTML, Head, Title, Body",
+        "choice4": "HTML, Head, Title, Body",
+        "answer": 3
+    },
+    {
+        "question": " Which of the following tag is used for inserting the largest heading in HTML?",
+        "choice1": "<h2>",
+        "choice2": "<h3>",
+        "choice3": "<h4>",
+        "choice4": "<h1>",
+        "answer": 4
+    },
+    {
+        "question": " Which type of JavaScript language is?",
+        "choice1": "Object-Oriented",
+        "choice2": "Object-Based",
+        "choice3": "Assembly-language",
+        "choice4": "None of the above",
+        "answer": 2
+    }
+]
