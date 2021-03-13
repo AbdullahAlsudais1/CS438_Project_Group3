@@ -3,6 +3,7 @@ session_start();?>
 <?php 
 
 
+
 //------------------------------------Register code-------------------------------------------
 $problem = array(); 
   if (isset($_POST['signUp'])) { // when we receive register request
