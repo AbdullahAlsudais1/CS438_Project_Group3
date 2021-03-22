@@ -1,6 +1,6 @@
 <?php 
-  include 'CheckDB.php';
-?><?php include 'problem.php'; ?>
+  include '../database and php files/CheckDB.php';
+?><?php include '../database and php files/problem.php'; ?>
 <!DOCTYPE html>
 
   <head>
@@ -13,7 +13,7 @@
 
         <div class="register">  
 
-        <h3>Register</h3>
+        <h2>Register</h2>
 
         <form action="Register.php" method="post">
 

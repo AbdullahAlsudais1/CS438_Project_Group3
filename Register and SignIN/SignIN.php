@@ -1,5 +1,5 @@
-<?php include 'CheckDB.php';?>
-<?php include 'problem.php'; ?>
+<?php include '../database and php files/CheckDB.php';?>
+<?php include '../database and php files/problem.php'; ?>
 
 <!DOCTYPE html>
 
@@ -12,8 +12,8 @@
     
 
             <center>
-                <div class="register">  
-                 <h3>Sign in</h3>
+                <div class="Login">  
+                 <h2>Sign in</h2>
 
                     <form action="signIN.php" method="post">
 
