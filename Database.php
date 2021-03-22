@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $port = "3325";
-$database="test2";
+$database="web_development";
 
 
 
@@ -16,7 +16,7 @@ $conn = mysqli_connect($servername, $username, $password ,$database,$port,);
 
 
 
-    if(!mysqli_select_db($conn,"test2"))
+    if(!mysqli_select_db($conn,$database))
         {
             echo '<br>' . "database not selected";
     }
