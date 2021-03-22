@@ -25,7 +25,9 @@ p {
 .register
 
 { 
-
+    margin-top: 170px;
+    align-content: center;
+    padding: 10px;
     width: 250px; height: 320;
 
     background-color:rgb(218, 218, 218);
