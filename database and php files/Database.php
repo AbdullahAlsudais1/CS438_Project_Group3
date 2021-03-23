@@ -3,7 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $port = "3325";
-$database="player";
+$database="web_development";
 
 
 

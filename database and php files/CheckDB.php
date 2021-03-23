@@ -20,7 +20,7 @@ $problem = array();
         }
 
 
-        $checkDB = "SELECT * FROM examiners WHERE Email='$Email' LIMIT 1";
+        $checkDB = "SELECT * FROM player WHERE Email='$Email' LIMIT 1";
         $result = mysqli_query($conn, $checkDB);
         $checked = mysqli_fetch_assoc($result);
 
@@ -36,7 +36,7 @@ $problem = array();
         if (count($problem) == 0) {// if we don have problem insert to DB
             $Password = md5($rePassword);
 
-                $insert = "INSERT INTO examiners " . "( Fname, Lname, Email ,Passwords) " . "VALUES ( '$FName', '$LName', '$Email' , '$Password' )";
+                $insert = "INSERT INTO player " . "( Fname, Lname, Email ,Passwords) " . "VALUES ( '$FName', '$LName', '$Email' , '$Password' )";
 
 
                 if ( ! mysqli_query($conn ,$insert ) ) 
@@ -47,7 +47,7 @@ $problem = array();
                
               // -----------------------------------know id -------------------------------
 
-                $Id = "SELECT ID FROM examiners WHERE Email = '$Email' and Passwords = '$Password'";
+                $Id = "SELECT ID FROM player WHERE Email = '$Email' and Passwords = '$Password'";
     
 
                 $MyId = mysqli_query($conn,$Id);
@@ -81,7 +81,7 @@ $problem = array();
         if (count($problem) == 0) {
             $Password = md5($Password);
 
-            $query = "SELECT * FROM examiners WHERE Email='$Email' AND Passwords='$Password'";
+            $query = "SELECT * FROM player WHERE Email='$Email' AND Passwords='$Password'";
 
             $results = mysqli_query($conn, $query);
 
@@ -93,7 +93,7 @@ $problem = array();
 
 
                 // -----------------------------------know id -------------------------------
-                $Id = "SELECT ID FROM examiners WHERE Email = '$Email' and Passwords = '$Password'";
+                $Id = "SELECT ID FROM player WHERE Email = '$Email' and Passwords = '$Password'";
         
 
                 $ResultMyId = mysqli_query($conn,$Id);
@@ -113,7 +113,7 @@ $problem = array();
 
 
                 // ------------------------------------know FName-------------------------------------- 
-                $FName = "SELECT Fname FROM examiners WHERE ID='$searchID'";
+                $FName = "SELECT Fname FROM player WHERE ID='$searchID'";
         
                 $ResultMyFName = mysqli_query($conn,$FName );
                 $MyFName= mysqli_fetch_array($ResultMyFName );
@@ -128,7 +128,7 @@ $problem = array();
 
 
                 // -----------------------------know LName--------------------------------------------
-                $LName = "SELECT Lname FROM examiners WHERE ID='$searchID'";
+                $LName = "SELECT Lname FROM player WHERE ID='$searchID'";
         
 
                 $ResultMyLName = mysqli_query($conn,$LName);
