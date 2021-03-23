@@ -19,7 +19,7 @@
         <h1>Quiz</h1>
 
         <a class="button" href="quizpage.html">Play</a>
-        <a class="button" href="topscores.html">Top Scores</a>
+        <a class="button" href="highscores.php">Top Scores</a>
       </div>
     </div>
   </body>
