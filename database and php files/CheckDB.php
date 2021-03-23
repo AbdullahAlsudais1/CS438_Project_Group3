@@ -61,7 +61,7 @@ $problem = array();
                 $_SESSION["LName"]=$LName;
                 $_SESSION["Email"]=$Email;
                 $_SESSION["Passwords"]=$Password;
-                header('location: homepage.php');
+                header('location: ../homepage.html');
 
   }
 }  
@@ -140,7 +140,7 @@ $problem = array();
 
 
                 
-                header('location: homepage.php');
+                header('location: ../homepage.html');
             }
                 
             else {

@@ -45,7 +45,7 @@ get_new_question = () => {
     if (available_questions.length === 0 || question_counter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
         //there is no questions or all question have been fetched
-        return window.location.assign('/end.html');
+        return window.location.assign('end.html');
     }
 
     question_counter++;
