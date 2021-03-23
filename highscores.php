@@ -1,3 +1,4 @@
+<?php  include 'database and php files/CheckDB.php';?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
