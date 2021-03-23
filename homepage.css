@@ -129,3 +129,20 @@ input {
 input::placeholder {
     color: #56a5eb;
 }
+.button1{
+
+
+    position:absolute;
+    right:10px;
+    top:5px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: 15px; 
+}
+.Profile{
+    margin-top: 35px;
+    padding-left: 10px;
+}
