@@ -10,27 +10,38 @@ let score = 0;
 let question_counter = 0;
 let available_questions = [];
 
-/* The question were moved the the question.json file, JSON doesn't support comments that's why we need to comment here
-I want to change the questions later to another topic history/trivia
-Fixed the single quotation in the first question into a double
-The questions moved to the .json file is not necessary just for a cleaner code */
+/* the questions from open trivia database, we chosed 10 easy sport questions */
 let questions = [];
 
-fetch("questions.json").then(res => {
+fetch('https://opentdb.com/api.php?amount=10&category=21&difficulty=easy&type=multiple').then(res => {
     return res.json();
 })
-.then(loadedQuestions => {
-    console.log(loadedQuestions);
-    questions = loadedQuestions;
-    start_game(); // moved it from the bottom to here since the questions need to be loaded
-})
-.catch(err => { // It will show the errors occured in the console, no need for that really just for best practice
-    console.error(err);
-});
+    .then((loadedQuestions) => {
+        console.log(loadedQuestions.results); // to make sure if it's working
+        questions = loadedQuestions.results.map((loadedQuestion) => {
+            const formattedQuestion = {
+                question: loadedQuestion.question
+            };
+
+            const answerChoices = [...loadedQuestion.incorrect_answers];// store incorrect anwers in array
+            formattedQuestion.answer = Math.floor(Math.random() * 3) + 1;// making the correct answer in random index
+            answerChoices.splice(formattedQuestion.answer - 1, 0, loadedQuestion.correct_answer);
+
+            answerChoices.forEach((choice, index) => {
+                formattedQuestion['choice' + (index + 1)] = choice;
+            });
+
+            return formattedQuestion;
+        });
+        start_game();
+    })
+    .catch(err => { // It will show the errors occured in the console, no need for that really just for best practice
+        console.error(err);
+    });
 
 /*Maybe increase the questions to 5?*/
 const CORRECT_BONUS = 10;
-const MAX_QUESTIONS = 4;
+const MAX_QUESTIONS = 10;
 
 start_game = () => {
 

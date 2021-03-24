@@ -2,8 +2,8 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$port = "3325";
-$database="web_development";
+$port = "3306";
+$database="player";
 
 
 
