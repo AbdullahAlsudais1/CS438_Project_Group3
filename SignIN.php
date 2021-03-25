@@ -1,5 +1,5 @@
-<?php include '../database and php files/CheckDB.php';?>
-<?php include '../database and php files/problem.php'; ?>
+<?php include 'CheckDB.php';?>
+<?php include 'problem.php'; ?>
 
 <!DOCTYPE html>
 

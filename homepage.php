@@ -1,4 +1,4 @@
-<?php  include 'database and php files/CheckDB.php';?>
+<?php  include 'CheckDB.php';?>
 <!DOCTYPE html>
 
   <head>
