@@ -1,4 +1,7 @@
-<?php  include 'CheckDB.php';?>
+<?php  include 'CheckDB.php';
+
+$myid= $_SESSION["ID"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
