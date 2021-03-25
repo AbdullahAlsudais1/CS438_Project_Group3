@@ -1,4 +1,4 @@
-<?php include 'database.php';
+<?php include 'Database.php';
 session_start();?>
 <?php 
 
@@ -33,17 +33,17 @@ $problem = array();
         
 
 
-        if (count($problem) == 0) {// if we don have problem insert to DB
-            $Password = md5($rePassword);
+    if (count($problem) == 0) {// if we don have problem insert to DB
+        $Password = md5($rePassword);// do not forget md5
 
-                $insert = "INSERT INTO player " . "( Fname, Lname, Email ,Passwords) " . "VALUES ( '$FName', '$LName', '$Email' , '$Password' )";
+            $insert = "INSERT INTO player " . "( Fname, Lname, Email ,Passwords) " . "VALUES ( '$FName', '$LName', '$Email' , '$Password' )";
 
 
-                if ( ! mysqli_query($conn ,$insert ) ) 
-                {
-                    print( "<p>Could not execute query!</p>" );
-                    die( mysqli_connect_error());
-                }
+            if ( ! mysqli_query($conn ,$insert ) ) 
+            {
+                print( "<p>Could not execute query!</p>" );
+                
+            }
                
               // -----------------------------------know id -------------------------------
 
