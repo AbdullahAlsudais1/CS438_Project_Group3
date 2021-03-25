@@ -62,4 +62,20 @@ h2 {
     border: 0.3rem solid rgba(86, 185, 235, 0.5);
     margin-top: 1.5rem;
     margin-bottom: 2rem;
-  }
+}
+  #loader{
+
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid rgba(86, 185, 235, 0.5);
+    width:12rem; height: 12rem;
+    animation: spin 2s linear infinite;
+}
+@keyframes spin{ /*this is animation for the spin*/
+    0%{/*this is the start*/
+        transform: rotate(0deg);
+    }
+    100%{/*this is end*/
+        transform: rotate(360deg);
+    }
+}
