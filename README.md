@@ -1,12 +1,12 @@
 # CS438_Project_Group3
 
-##Overview
+## Overview
 The quiz app it is a quiz play that contains collection of questions for specific domain of interest. The quiz app have specific number of questions where in the game the quiz app will select randomly the questions from open trivia database API. Finally, based on the score the player will be ranked in High score.
 
 
 
 
-##Goals
+## Goals
 -Retrieve questions from open trivia database API.
 -Save high scores in Local Storage.
 -Provide a progress bar, it should be incremented by the number of questions.
@@ -18,15 +18,15 @@ The quiz app it is a quiz play that contains collection of questions for specifi
 
 
 
-##Interface and layout design
+## Interface and layout design
 
 
 
-##Underlying technologies
+## Underlying technologies
 
 
 
-##User Interaction
+## User Interaction
 
 
 
