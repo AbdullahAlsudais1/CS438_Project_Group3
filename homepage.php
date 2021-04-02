@@ -14,7 +14,7 @@
   <div class="Profile">
     <h3>Profile</h3>
         <p><strong>Name: </strong> <?php echo  $_SESSION['FName'],"&nbsp;" . $_SESSION['LName']; ?></p> <br><br>
-        <p><strong>Email:</strong>  <?php echo $_SESSION['Email'];   ?></p>
+        <p><strong>Email:</strong> <?php echo $_SESSION['Email'];   ?></p>
   </div>
 
     <div class="container">

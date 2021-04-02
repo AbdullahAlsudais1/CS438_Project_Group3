@@ -5,15 +5,17 @@
 
   <head>
     <title>Quiz</title>
-    <link rel="stylesheet" href="SignIN.css">
+    <!-- <link rel="stylesheet" href="SignIN.css"> -->
+    <link rel="stylesheet" href="homepage.css">
 
   </head>
   <body>
     
 
             <center>
-                <div class="Login">  
-                 <h2>Sign in</h2>
+                <div class="container">
+                 <div class="flex-center flex-column">
+                  <h2>Sign in</h2>
 
                     <form action="signIN.php" method="post">
 
@@ -27,17 +29,17 @@
 
 
 
-                        <button type="submit" class="button1" name="SignIn">Sign in</button>
+                        <button type="submit" class="button" name="SignIn">Sign in</button>
 
 
 
-                        <a href="Register.php"><button type="button" class="button1">Register</button></a>
+                        <a href="Register.php"><button type="button" class="button">Register</button></a>
 
 
                     </form>
 
 
-
+                 </div>
                 </div>
 
 

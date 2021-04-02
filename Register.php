@@ -6,7 +6,8 @@
   <head>
     <title>Register page</title>
 
-    <link rel="stylesheet" href="Register.css">
+    <!-- <link rel="stylesheet" href="Register.css"> -->
+    <link rel="stylesheet" href="homepage.css">
   </head>
   <body>
         <center>
@@ -51,7 +52,7 @@
 
 
 
-             <button type="submit" class="button1" name="signUp">Sign up</button>
+             <button type="submit" class="button" name="signUp">Sign up</button>
 
         
 

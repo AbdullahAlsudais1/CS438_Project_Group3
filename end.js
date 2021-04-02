@@ -9,7 +9,7 @@ finalScore.innerText = mostRecentScore;
 username.addEventListener('keyup', () => {
     saveScoreButton.disabled = !username.value; // The save button will be disabled until the username value is filled
 })
-saveHighScore = (e) => {
+saveHighScore = e => {
     console.log("clicked the save button!") // We will delete all console logs in the end
     e.preventDefault(); // To prevent the form form submitting to a new page
     const score = {
@@ -21,5 +21,5 @@ saveHighScore = (e) => {
        b.score - a.score)
     highScores.splice(5);
     localStorage.setItem("highScores", JSON.stringify(highScores));
-    window.location.assign("/");
+    window.location.assign("homepage.php");
 };
