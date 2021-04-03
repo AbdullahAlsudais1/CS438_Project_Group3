@@ -22,6 +22,12 @@ The quiz app is a quiz play that contains a collection of questions for a specif
 
 
 ## Underlying technologies
+The underlying technologies that we are used to designing our system are:
+* PHP: We used PHP for connecting and retrieving data from the database. PHP is a server-side scripting language that is used to develop dynamic and interactive websites.
+* JavaScript: We used Javascript to enhance the functionality and appearance of a web page. Javascript is a client-side language that helps us to build dynamic web pages such as response to the event, user input.
+* HTML: It is used to specify the content and structure of web pages.
+* CSS: It is used to specify the presentation and styling the element on web pages.
+
 
 
 
