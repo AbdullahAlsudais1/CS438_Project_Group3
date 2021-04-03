@@ -4,11 +4,11 @@
   <head>
     
     <title>Quiz</title>
-    <link rel="stylesheet" type="text/css" href="homepage.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" type="text/css" href="homepage.css">
   </head>
   <body>
 
-   <div class="button1"><a  class="button" href="Register and SignIN/logout.php">Logout</a></div>
+   <div class="button1"><a  class="button" href="logout.php">Logout</a></div>
    <h3>Home page</h3>
    <hr>
   <div class="Profile">

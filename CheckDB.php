@@ -34,7 +34,7 @@ $problem = array();
 
 
     if (count($problem) == 0) {// if we don have problem insert to DB
-        $Password = md5($rePassword);// do not forget md5
+        $Password = $rePassword;// do not forget md5
 
             $insert = "INSERT INTO player " . "( Fname, Lname, Email ,Passwords) " . "VALUES ( '$FName', '$LName', '$Email' , '$Password' )";
 
@@ -79,7 +79,7 @@ $problem = array();
         
     
         if (count($problem) == 0) {
-            $Password = md5($Password);
+            $Password = $Password;
 
             $query = "SELECT * FROM player WHERE Email='$Email' AND Passwords='$Password'";
 
