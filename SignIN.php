@@ -5,7 +5,6 @@
 
   <head>
     <title>Quiz</title>
-    <!-- <link rel="stylesheet" href="SignIN.css"> -->
     <link rel="stylesheet" href="homepage.css">
 
   </head>

@@ -6,7 +6,6 @@
   <head>
     <title>Register page</title>
 
-    <!-- <link rel="stylesheet" href="Register.css"> -->
     <link rel="stylesheet" href="homepage.css">
   </head>
   <body>
