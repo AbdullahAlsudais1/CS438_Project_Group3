@@ -18,7 +18,16 @@ The quiz app is a quiz play that contains a collection of questions for a specif
 
 
 ## Interface and layout design
-
+##### On the first page of our website, it is a signIn page where the player should enter his email and password if it has an account to enter the home page or should be creating a new account throw the register button as shown in the figure below.
+![](images/loginPage.jpg =250*250)
+##### 
+![](images/registerPage.jpg)
+##### 
+![](images/homepage.jpg)
+##### 
+![](images/quizPage.jpg)
+##### 
+![](images/scorePage.jpg)
 
 
 ## Underlying technologies
