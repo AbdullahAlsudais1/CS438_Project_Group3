@@ -1,4 +1,14 @@
 # CS438_Project_Group3
+## Quiz App
+By:
+* Abdullah Sulaiman Alsudais	 (438012355)
+* Abdulrahman Saad Alsakran	 (438011736)
+* Ibrahim Faiz Babgi             (438011611)
+* Abdulmalik AlNajidi            (437013642)
+
+Supervisor: Dr. Abdulrahman alosaimy
+
+
 # Table of content
 - **[Overview](#overview)**
 - **[User Interaction](#User-Interaction)**
