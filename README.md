@@ -9,7 +9,7 @@ The quiz app is a quiz play that contains a collection of questions for a specif
 * Retrieve questions from open trivia database API.
 * Save high scores in Local Storage.
 * Provide a progress bar, it should be incremented by the number of questions.
-* Provide a spinning loader icon when the player presses the refresh or next button.
+* Provide a spinning loader icon when the player presses the refresh.
 * Provide Dynamic loading questions in HTML based on the number of questions in javascript.
 * We will be ranking the player based on the score in the game.
 * We will add the user authentication to the website.
