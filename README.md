@@ -20,14 +20,19 @@ The quiz app is a quiz play that contains a collection of questions for a specif
 ## Interface and layout design
 ##### On the first page of our website, it is a signIn page where the player should enter his email and password if it has an account to enter the home page or should be creating a new account throw the register button as shown in the figure below.
 <img src="https://github.com/AbdullahAlsudais1/CS438_Project_Group3/blob/main/images/loginPage.jpg" width="350" height="350" />
-## on the first page
+
+##### On this page, the player creates a new account by providing his first name, last name, email, and password as shown in the figure below, then the system will create an account in the database.
 <img src="https://github.com/AbdullahAlsudais1/CS438_Project_Group3/blob/main/images/registerPage.jpg" width="350" height="350" />
-##### on
-<img src="https://github.com/AbdullahAlsudais1/CS438_Project_Group3/blob/main/images/homepage.jpg" width="550" height="450" />
-##### on
-<img src="https://github.com/AbdullahAlsudais1/CS438_Project_Group3/blob/main/images/quizPage.jpg" width="550" height="450" />
-##### on
+
+##### After the player is logged in, the home page will appear with the player profile, the option to start the game, and the option of top scores in the game as shown in the figure below. The Logout button will log the player out from the website and take the user to the login page.
+<img src="https://github.com/AbdullahAlsudais1/CS438_Project_Group3/blob/main/images/homepage.jpg" width="650" height="450" />
+
+##### On the quiz page, will appear the questions and  four choices that the player should select one of them to go to the next question and finish the game. On top of the page, we have a progress bar it determined the number of questions that remain and also the score that player taken from the questions until now.
+<img src="https://github.com/AbdullahAlsudais1/CS438_Project_Group3/blob/main/images/quizPage.jpg" width="650" height="450" />
+
+##### On the high score page, we see the ranking of players in order from highest to lowest as shown in the figure below.
 <img src="https://github.com/AbdullahAlsudais1/CS438_Project_Group3/blob/main/images/scorePage.jpg" width="350" height="350" />
+
 
 
 
