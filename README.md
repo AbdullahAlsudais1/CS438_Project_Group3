@@ -1,8 +1,7 @@
 # CS438_Project_Group3
 
 ## Overview
-The quiz app it is a quiz play that contains collection of questions for specific domain of interest. The quiz app have specific number of questions where in the game the quiz app will select randomly the questions from open trivia database API. Finally, based on the score the player will be ranked in High score.
-
+The quiz app is a quiz play that contains a collection of questions for a specific domain of interest. The quiz app has a specific number of questions in the game, where the quiz app will select randomly the questions from the open trivia database API. The player should have an account to allow him to play the quiz. At the beginning of the quiz game, the system displays one question at a time to the player with four choices, and the player should be select one of the options to go to the next question. At end of the quiz, the player score will be ranked in high score based on the player score that it is token in game. The player can see his ranking on the high score page and see the ranking of other players.
 
 
 
