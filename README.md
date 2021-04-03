@@ -27,6 +27,9 @@ The underlying technologies that we are used to designing our system are:
 * **JavaScript**: We used Javascript to enhance the functionality and appearance of a web page. Javascript is a client-side language that helps us to build dynamic web pages such as response to the event, user input.
 * **HTML**: It is used to specify the content and structure of web pages.
 * **CSS**: It is used to specify the presentation and styling the element on web pages.
+* **JSON**: It is a simple way to represent the javascript object as a string and for passing data between the client and the server, also used in parsing JSON data.
+* **phpMyAdmin**: Database management is used to store data.
+* **XAMPP**: It is a web server that allows us to test our work on localhost. It consists of the Apache Server, MySql, and PHP where XAMPP is considered the most popular PHP development environment to run PHP code.
 
 
 
