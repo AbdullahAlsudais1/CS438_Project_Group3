@@ -1,8 +1,8 @@
 # CS438_Project_Group3
 # Table of content
-- **[Overview](##Overview)**
-- **[User Interaction](##User-Interaction)**
-- **[Web application testing](##Web-application-testing)**
+- **[Overview](#overview)**
+- **[User Interaction](#User-Interaction)**
+- **[Web application testing](#Web-application-testing)**
 
 
 ## Overview
