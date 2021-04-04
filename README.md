@@ -67,7 +67,7 @@ In Ajax, the web applications can send and retrieve data from a server asynchron
 
 
 ## User Interaction
-
+<img src="https://github.com/AbdullahAlsudais1/CS438_Project_Group3/blob/main/images/Flow%20Chrar.png"  />
 
 
 ## Web application testing
