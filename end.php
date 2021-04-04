@@ -1,3 +1,12 @@
+<?php  include 'CheckDB.php';
+
+$myid= $_SESSION["ID"];
+
+         $name = "SELECT Fname FROM player WHERE ID='$myid' ";
+        $result = mysqli_query($conn, $checkDB);
+        $name = mysqli_fetch_assoc($result);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -15,18 +24,19 @@
         <div id="end" class="flex-center flex-column">
             <h1 id="finalScore"></h1>
             <form>
-                <input 
+                <input hidden
                   type="text" 
                   name="username" 
                   id="username" 
                   placeholder="username"
+                  value="<?php echo $name;?>"
                 />
                 <button 
                   type="submit" 
                   class="button" 
                   id="saveScoreButton" 
                   onclick="saveHighScore(event)"
-                  disabled
+                
                 >
                   Save
                 </button>
