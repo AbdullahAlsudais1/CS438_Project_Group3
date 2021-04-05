@@ -76,13 +76,13 @@ In Ajax, the web applications can send and retrieve data from a server asynchron
 Test cases
     1. User registers with valid information - result: Registration succefully done and user login automatically
     2. User registers with missing fields - result: Error message shows up and not allowing the user to register
-    3. User registers multiple times with the same information - reslut: User succefully registers and login automatically
-    4. User enters valid username and password - reslut: user cannot login
-    5. User enters invalid username and password - reslut: user cannot login
+    3. User registers multiple times with the same information - result: User succefully registers and login automatically
+    4. User enters valid username and password - result: user cannot login
+    5. User enters invalid username and password - result: user cannot login
         
 2. Test Scenario: Homepage interactions
 Test cases
-    1. User presses "logout" button - reslut: A 404 error occurs because the URL was not found
+    1. User presses "logout" button - result: A 404 error occurs because the URL was not found
     2. User presses "Play" button - result: homepage directs the user to the quizpage
     3. User presses "Top scores" button - result: homepage directs the user to the high scores page with the top 5 scores with their usernames shown next to their score
         
