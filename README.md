@@ -73,7 +73,7 @@ In Ajax, the web applications can send and retrieve data from a server asynchron
 ## Web application testing
 
 1. Test Scenario: User Register & Login
-  Test cases:
+Test cases:
     1. User registers with valid information
         result: Registration succefully done and user login automatically
     2. User registers with missing fields
@@ -86,7 +86,7 @@ In Ajax, the web applications can send and retrieve data from a server asynchron
         reslut: user cannot login
         
 2. Test Scenario: Homepage interactions
-  Test cases:
+Test cases:
     1. User presses "logout" button
         reslut: A 404 error occurs because the URL was not found
     2. User presses "Play" button
@@ -95,14 +95,14 @@ In Ajax, the web applications can send and retrieve data from a server asynchron
         result: homepage directs the user to the high scores page with the top 5 scores with their usernames shown next to their score
         
 3. Test Scenario: Quizpage interactions
-  Test cases:
+Test cases:
     1. User presses the choice prefix or the upper level of the choice container
         result: choice is not pressed due to size of the prefix
     2. User presses text or the lower level of the choice container
         result: the choice is pressed succefully and the question moves to the next one
         
 4. Test Scenario: Endpage interactions
-  Test cases:
+Test cases:
     1. User presses the "Save" button without entering a username
         result: cannot be pressed until the user enters a username
     2. User enters a username and save it
