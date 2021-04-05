@@ -74,8 +74,7 @@ In Ajax, the web applications can send and retrieve data from a server asynchron
 
 1. Test Scenario: User Register & Login
 Test cases:
-    1. User registers with valid information
-        result: Registration succefully done and user login automatically
+    1. User registers with valid information - result: Registration succefully done and user login automatically
     2. User registers with missing fields
         result: Error message shows up and not allowing the user to register
     3. User registers multiple times with the same information
