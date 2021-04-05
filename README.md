@@ -82,7 +82,7 @@ Test cases
         
 2. Test Scenario: Homepage interactions
 Test cases
-    1. User presses "logout" button - result: A 404 error occurs because the URL was not found
+    1. User presses "logout" button - result: homepage directs the user to the loginpage and logout the user from website.
     2. User presses "Play" button - result: homepage directs the user to the quizpage
     3. User presses "Top scores" button - result: homepage directs the user to the high scores page with the top 5 scores with their usernames shown next to their score
         
